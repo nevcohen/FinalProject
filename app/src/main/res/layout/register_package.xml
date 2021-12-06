@@ -1,40 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+
+
 
         <Spinner
             android:id="@+id/planets_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"/>
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top"
+            android:background="#9C27B0" />
 
 
         <CheckBox
             android:id="@+id/checkBox3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
             android:layout_gravity="top"
+            android:background="#9C27B0"
             android:text="Burger" />
 
+        <Spinner
+            android:id="@+id/Weight_spinner"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top"
+            android:background="#9C27B0" />
+
         <EditText
-            android:id="@+id/Recipients_name_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:id="@+id/name"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top"
+
+            />
+
+        <EditText
+            android:id="@+id/adrass"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            />
 
 
     </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
